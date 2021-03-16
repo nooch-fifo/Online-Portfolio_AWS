@@ -108,25 +108,25 @@
     .linkedin{
         width: 50px;
         margin-top: -25px;
-        margin-left: auto;
+        margin-left: 25px;
         padding-top: 25px;
     }
     .handshake{
         width: 50px;
         margin-top: auto;
-        margin-left: auto;
+        margin-left: 25px;
         padding-top: 25px;
     }
     .github{
         width: 50px;
         margin-top: auto;
-        margin-left: auto;
+        margin-left: 25px;
         padding-top: 25px;
     }
     .leetcode{
         width: 50px;
         margin-top: auto;
-        margin-left: auto;
+        margin-left: 25px;
         padding-top: 25px;
     }
 

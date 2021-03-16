@@ -168,7 +168,7 @@
             margin-bottom: 25px; 
             margin-left: -50px;
             height: auto;
-            width: auto;
+            width: 200px;
         }
         .subscribe-input::placeholder {
             text-transform: capitalize;
@@ -178,9 +178,9 @@
             width: auto;
             transform: translateY(-50px);
             margin-bottom: 20px;
-            margin-left: 150px;
+            margin-left: 175px;
             text-transform: capitalize;
-            width: 120px;
+            width: 125px;
         } 
 
         .profile-pic img{
