@@ -34,7 +34,7 @@ export default function ContactMe(){
             </div>
         </form>
             <div className="profile-pic">
-                <a href="https://my.indeed.com/api/3/profile/files/resume/mostRecent">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">
                     <img src = "faceshot.png" alt=""></img>
                 </a>
                 <h3>Thank you! </h3>
