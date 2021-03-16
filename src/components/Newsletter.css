@@ -1,0 +1,191 @@
+.newsletter{
+    display: flex;
+    flex-flow: column;
+    background: #ffffff;
+    padding: 5rem;
+    margin-bottom: -40px;
+}
+
+/*
+.newsletter > h2 {
+    color: #da0c0c;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: -35px;
+    margin-top: -25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+.please{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    margin-top: -10px;
+  }
+.please > h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 2vw;
+    color: #ffffff;
+    -webkit-text-stroke: 0.1vw; /* can make #2f2e2e or #da0c0c*/
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-top: -55px;
+  }
+.please > h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #da0c0c;
+    -webkit-text-stroke: 0vw #2f2e2e;
+    border-right: 2px solid #da0c0c;
+    overflow: hidden;
+    animation: animate 7s linear infinite;
+    /* animation-iteration-count: 5; */
+  }
+  
+  @keyframes animate
+  {
+    0%, 10%, 100%
+    {
+      width: 0;
+    }
+    70%,90%
+    {
+      width: 100%;
+    }
+  }
+  
+
+.newsletter > h4 {
+    color: #2f2e2e;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: -55px;
+    margin-top: -25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.subscribe-input{
+    height: 25px;
+    padding: 2px;
+    justify-content: center;
+    width: 255px;
+    align-items: center;
+    margin-left: 650px;
+    margin-top: 100px;
+    border-radius: 25px;
+    border-color: #9e9d9d;
+}
+
+.subscribe-input::placeholder {
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subscribe-btn {
+    padding: 5px;
+    height: 35px;
+    width: 155px;
+    margin-left: 10px;
+    /* background-color: #417cef; */
+    border: 0;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    color: white;
+    background-color: #2f2e2e;
+    text-transform: uppercase;
+    /*margin-top: 32px;*/
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color:#9e9d9d;
+}
+
+.profile-pic > h3 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #da0c0c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.profile-pic img{
+    height: 14rem;
+    width: 15rem;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 35px;
+    border-radius: 100%;
+    border: 5px solid #bdbdbd;
+    cursor: pointer;
+
+  }
+ 
+  @media (max-width: 960px){
+
+        .newsletter{
+            margin-bottom: auto;
+            padding-top: 0px;
+            padding-bottom: 25px;
+        }
+
+        .newsletter h2{
+            margin-top: auto;
+            margin-bottom: auto;
+            font-size: 25px;
+            transform: translateY(50px);
+        }
+        .newsletter h4{
+            font-size: 11px;
+            margin-left: auto;
+            margin-top: 25px;
+            margin-bottom: -25px;
+            transform: translateY(25px);
+            width: auto;
+            text-align: justify;
+
+        }
+        .subscribe-input{
+            margin-top: 100px;
+            margin-bottom: 25px; 
+            margin-left: -50px;
+            height: auto;
+            width: auto;
+        }
+        .subscribe-input::placeholder {
+            text-transform: capitalize;
+        }
+        .subscribe-btn{
+            height: auto;
+            width: auto;
+            transform: translateY(-50px);
+            margin-bottom: 20px;
+            margin-left: 150px;
+            text-transform: capitalize;
+            width: 120px;
+        } 
+
+        .profile-pic img{
+            margin-top: 5px;
+            transform: translateX(-10px);
+        }
+ 
+  }

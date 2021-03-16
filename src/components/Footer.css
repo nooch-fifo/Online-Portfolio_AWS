@@ -1,0 +1,14 @@
+.footer{
+    background: #e8e8e8;
+    padding: .25rem;
+}
+
+
+.footer > h4 {
+    max-height: .50rem;
+    text-align: center;
+    color: #000000;
+    font-size: 12.5px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,167 @@
+.description-container{
+    display: flex;
+    flex-flow: column;
+    background: #ffffff;
+    padding: 2.5rem;
+}
+.description{
+    margin-top: 5px;
+}
+/*
+h2 {
+    color: #da0c0c;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 32px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 320px;
+    margin-bottom: -55px;
+}*/
+
+.body-sample{
+    display: grid;
+    color: #ffffff57;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  }
+/* using rem allows font & shadows to change together */
+.glitch {
+    font-size: 2.7rem; 
+    font-weight: 200;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 225px;
+    margin-top: 160px;
+    margin-bottom: -250px;
+
+  /*set an rgba value for each color and set offsets for each to be slightly different so all colors come out */
+    text-shadow:
+      0.05em 0 0 rgba(0,118,180,.90),
+      -0.025em -0.05em 0 rgba(235, 0, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 255, 0, .50);
+  
+    animation: glitch 2500ms infinite;
+}
+
+.glitch span {
+    position: absolute;
+    top: .5px;
+    left: 1.5px;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 2750ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.0125em);
+    opacity: 0.8;
+  }
+  .glitch span:last-child {
+    animation: glitch 750ms infinite;
+    clip-path: polygon(0 70%, 100% 30%, 100% 100%, 0 100%);
+    transform: translate(0.0125em, 0.025em);
+    opacity: 0.8;
+  }
+/* keep tinkering with rgba values to get best glitchy colors */
+@keyframes glitch {
+    0% {
+      text-shadow:
+        0.05em 0 0 rgb(0, 139, 214),
+        -0.025em -0.05em 0 rgba(235, 0, 0, 0.75),
+        0.025em 0.05em 0 rgba(0, 255, 0, .25);
+    }
+    14% {
+      text-shadow:
+        0.05em 0 0 rgba(235, 0, 0, 0.95),
+        -0.025em -0.05em 0 rgb(0, 139, 214),
+        0.025em 0.05em 0 rgba(0, 255, 0, .25);
+    }
+    15% {
+      text-shadow:
+        -0.05em -0.025em 0 rgba(0,118,180,.90),
+        0.025em 0.025em 0 rgba(235, 0, 0, 0.75),
+        -0.05em 0 0 rgba(0, 255, 0, .55);
+    }
+    49% {
+      text-shadow:
+        -0.05em -0.025em 0 rgba(0,118,180,.90),
+        0.025em 0.025em 0 rgba(235, 0, 0, 0.75),
+        -0.05em 0 0 rgba(0, 255, 0, .25);
+    }
+    50% {
+      text-shadow:
+        0.025em 0.05em 0 rgba(0,118,180,.90),
+        0.05em 0 0 rgba(235, 0, 0, 0.95),
+        0 -0.05em 0 rgba(0, 255, 0, .55);
+    }
+    99% {
+      text-shadow:
+        0.025em 0.05em 0 rgba(235, 0, 0, 0.95),
+        0.05em 0 0 rgba(0,118,180,.90),
+        0 -0.05em 0  rgba(0, 255, 0, .25);
+    }
+    100% {
+      text-shadow:
+        -0.025em 0 0 rgb(0, 139, 214),
+        -0.025em -0.025em 0 rgba(235, 0, 0, 0.95),
+        -0.025em -0.05em 0 rgba(0, 255, 0, .25);
+    }
+  }
+
+/*media query for people who do not want animations on their broswer*/
+/*
+@media (prefers-reduced-motion: reduce){
+  *,
+  ::before,
+  ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+} */
+
+
+p {
+    font-weight:lighter;
+    font-size: 20px;
+    color: #1b1e1f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    margin-left: 850px;
+}
+
+
+
+@media (max-width: 960px){
+
+  .description-container{
+    margin-top: -40px;
+  }
+
+  .description{
+    margin-top: -70px;
+  }
+
+    p{
+        width: auto;
+        margin-left: auto;
+        font-size: 12px;
+    }
+
+    .glitch{
+        transform: translateY(-105px);
+        margin-bottom: auto;
+        margin-left: 5px;
+        text-align: center;
+        
+    }
+    .glitch span {
+      position: absolute;
+      top: .5px;
+      left: 40.5px;
+    }
+}
