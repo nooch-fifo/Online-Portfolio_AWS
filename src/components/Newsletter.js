@@ -35,7 +35,7 @@ export default function ContactMe(){
         </form>
             <div className="profile-pic">
                 <a href="https://my.indeed.com/api/3/profile/files/resume/mostRecent">
-                    <img src = "faceshot.jpeg" alt=""></img>
+                    <img src = "faceshot.png" alt=""></img>
                 </a>
                 <h3>Thank you! </h3>
             </div>
