@@ -1,7 +1,7 @@
 .apps{
     background: #2f2e2e;
     padding: 10rem;
-    opacity: 100%;
+    opacity: 100% !important;
     margin-bottom: -70px;
 }
 
