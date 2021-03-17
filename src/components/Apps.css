@@ -19,7 +19,6 @@
 }
 
 
-
 .linkedin{
     width: 17%;
     margin-top: 100px;
@@ -134,3 +133,63 @@
         display:none;
     }
 } 
+
+@media (max-width: 1440px){
+
+    .apps-logos{
+        width: 100%;
+    }
+
+    .apps h2{
+        font-size: 22.5px;
+    }
+
+    .linkedin{
+        width: 120px;
+        margin-top: -25px;
+        margin-left: 120px;
+        padding-top: 25px;
+    }
+    .handshake{
+        width: 120px;
+        margin-top: auto;
+        margin-left: 120px;
+        padding-top: 25px;
+    }
+    .github{
+        width: 120px;
+        margin-top: auto;
+        margin-left: 120px;
+        padding-top: 25px;
+    }
+    .leetcode{
+        width: 120px;
+        margin-top: auto;
+        margin-left: 120px;
+        padding-top: 25px;
+    }
+
+    .apps-names > h5{
+    font-size: 20px;
+    }
+
+    .linkedin_name {
+        margin-top: 50px;
+        margin-left: 140px;
+    }
+    
+    .handshake_name {
+        margin-left: 370px;
+        margin-top: -60px;
+    }
+    
+    .github_name {
+        margin-left: 630px;
+        margin-top: -60px;
+    }
+    
+    .leetcode_name {
+        margin-left: 860px;
+        margin-top: -60px;
+    }
+}

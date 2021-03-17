@@ -189,3 +189,22 @@
         }
  
   }
+
+  @media (max-width: 1440px){
+    .subscribe-input{
+        margin-top: 100px;
+        margin-bottom: 15px; 
+        margin-left: 350px;
+        height: auto;
+        width: 300px;
+    }
+    .subscribe-btn{
+        height: auto;
+        width: auto;
+        transform: translateY(0px);
+        margin-bottom: 20px;
+        margin-left: 125px;
+        text-transform: capitalize;
+        width: 125px;
+    } 
+  }

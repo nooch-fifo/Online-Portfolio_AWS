@@ -165,3 +165,18 @@ p {
       left: 42.5px;
     }
 }
+
+@media (max-width: 1440px){
+
+  p{
+    width: auto;
+    margin-left: 650px;
+    font-size: 15px;
+}
+
+.glitch{
+
+  margin-left: 175px;
+}
+
+}
