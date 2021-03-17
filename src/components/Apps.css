@@ -136,6 +136,9 @@
 
 @media (max-width: 1440px){
 
+    .apps{
+        margin-bottom: -100px;
+    }
     .apps-logos{
         width: 100%;
     }
