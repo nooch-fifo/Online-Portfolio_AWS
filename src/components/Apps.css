@@ -1,7 +1,8 @@
 .apps{
+    box-sizing: border-box;
     background: #2f2e2e;
     padding: 10rem;
-    margin-bottom: -70px;
+    margin-bottom: -100px;
 }
 
 /* display: grid?? */
@@ -17,85 +18,83 @@
     margin-bottom: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-.linkedin{
-    width: 17%;
-    margin-top: 100px;
-    margin-left: 110px;
-    transition: 0.7s; 
+.column{
+    float: left;
+    width: 24%;
+    padding: 5px;
 }
 
+.row{
+    margin-top: 105px;
+    margin-left: 125px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.linkedin{
+    transition: 0.7s;
+    width: 70%; 
+}  
 .linkedin:hover{
     transform: scale(0.9);
 }
-
 .handshake{
-    width: 17%;
-    margin-top: 100px;
-    margin-left: 110px; /* should be 81px */
+    width: 70%; 
     transition: 0.7s; 
 }
-
 .handshake:hover{
     transform: rotate(0deg) skew(0deg) translate(0, -20px);
     /*transform: scale(0.9);*/
 }
-
-
 .github{
-    width: 17%;
-    margin-top: 100px;
-    margin-left: 110px; /* should be 81px */
+    width: 70%; 
     transition: 0.7s; 
 }
-
 .github:hover{
     transform: scale(0.9);
 }
-
-
 .leetcode{
-    width: 14%;
-    margin-top: 100px;
-    margin-left: 110px; /* should be 81px */
+    width: 60%; 
     transition: 0.7s; 
 }
-
 .leetcode:hover{
-   transform: rotate(0deg) skew(0deg) translate(0, -20px);
-   /*transform: scale(0.9);*/
-}
+    transform: rotate(0deg) skew(0deg) translate(0, -20px);
+    /*transform: scale(0.9);*/
+ }
 
 .apps-names > h5 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
+    width: 24%;
 }
 
 .linkedin_name {
     margin-top: 80px;
-    margin-left: 190px;
+    margin-left: 200px;
 }
 
 .handshake_name {
-    margin-left: 560px;
+    margin-left: 555px;
     margin-top: -70px;
 }
 
 .github_name {
-    margin-left: 960px;
+    margin-left: 940px;
     margin-top: -70px;
 }
 
 .leetcode_name {
-    margin-left: 1310px;
+    margin-left: 1270px;
     margin-top: -70px;
 }
 
-
-@media (max-width: 960px){
+/*
+@media (max-width: 376px){
     .apps h2{
     position: absolute;
     font-size: 24px;
@@ -104,95 +103,58 @@
     margin-bottom: 10px;
     }
 
-    .linkedin{
-        width: 50px;
-        margin-top: -25px;
-        margin-left: 25px;
-        padding-top: 25px;
-    }
-    .handshake{
-        width: 50px;
-        margin-top: auto;
-        margin-left: 25px;
-        padding-top: 25px;
-    }
-    .github{
-        width: 50px;
-        margin-top: auto;
-        margin-left: 25px;
-        padding-top: 25px;
-    }
-    .leetcode{
-        width: 50px;
-        margin-top: auto;
-        margin-left: 25px;
-        padding-top: 25px;
-    }
-
+    .column {
+        width: 100%;
+      }
+    
     .apps-names{
         display:none;
     }
-} 
+} */
 
-@media (max-width: 1440px){
+@media only screen and (max-width: 768px) {
+    .column {
+      width: 100%;
+    }
+    h5 {
+      display: none;
+    }
+  }
+
+@media (max-width: 1460px) and (min-width: 769px){
 
     .apps{
         margin-bottom: -100px;
     }
-    .apps-logos{
-        width: 100%;
-    }
+    .column {
+        width: 20%;
+      }
 
     .apps h2{
         font-size: 22.5px;
     }
 
-    .linkedin{
-        width: 120px;
-        margin-top: -25px;
-        margin-left: 120px;
-        padding-top: 25px;
-    }
-    .handshake{
-        width: 120px;
-        margin-top: auto;
-        margin-left: 120px;
-        padding-top: 25px;
-    }
-    .github{
-        width: 120px;
-        margin-top: auto;
-        margin-left: 120px;
-        padding-top: 25px;
-    }
-    .leetcode{
-        width: 120px;
-        margin-top: auto;
-        margin-left: 120px;
-        padding-top: 25px;
-    }
-
     .apps-names > h5{
-    font-size: 20px;
+    font-size: 18px;
     }
 
     .linkedin_name {
         margin-top: 50px;
-        margin-left: 140px;
+        margin-left: 165px;
     }
     
     .handshake_name {
-        margin-left: 370px;
-        margin-top: -60px;
+        margin-left: 360px;
+        margin-top: -55px;
     }
     
     .github_name {
-        margin-left: 630px;
-        margin-top: -60px;
+        margin-left: 585px;
+        margin-top: -55px;
     }
     
     .leetcode_name {
-        margin-left: 860px;
-        margin-top: -60px;
+        margin-left: 770px;
+        margin-top: -55px;
     }
-}
+} 
