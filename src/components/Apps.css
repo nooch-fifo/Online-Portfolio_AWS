@@ -128,6 +128,7 @@
     }
     .column {
         width: 20%;
+        margin-left: 24px;
       }
 
     .apps h2{
@@ -140,21 +141,21 @@
 
     .linkedin_name {
         margin-top: 50px;
-        margin-left: 165px;
+        margin-left: 185px;
     }
     
     .handshake_name {
-        margin-left: 360px;
+        margin-left: 405px;
         margin-top: -55px;
     }
     
     .github_name {
-        margin-left: 585px;
+        margin-left: 655px;
         margin-top: -55px;
     }
     
     .leetcode_name {
-        margin-left: 770px;
+        margin-left: 865px;
         margin-top: -55px;
     }
 } 
